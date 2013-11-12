@@ -20,12 +20,13 @@
                 onmouseout="this.src='italiano.gif';
                 this.style.height='636px'"/> -->
                 <h1> Magical Kingdom <h1>
-                
+
 <form name=myform>
 <input type=button value="Enter Your Name" 
 onClick="
   s=prompt('Enter your name','Name');
-  alert('Hello '+s+'!')">
+  alert('Hello '+s+'! '+ 'Ready to Play the Game' + '?')">
 </form>
- 
+
+
 </html>
