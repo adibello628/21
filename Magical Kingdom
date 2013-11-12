@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- gamer.html Alyssa DiBello, Jaclyn Navarro, Courtney Shultz-->
+<!-- This is our web page that we desgined to play a game -->
+<!-- We hope you Enjoy our game!                    -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+   <title> Magical Kingdom </title>
+   <!-- script type="text/javascript" 
+   			src= "average.js"></script> -->
+ </head>
+
+ <body>
+ <body style="background-color:red;color:white">
+  <div style="text-align:center">
+           <!-- <img src="italiano.gif" alt="image"
+                onmouseover="this.src='italia.gif';
+                this.style.height='636px'"
+                onmouseout="this.src='italiano.gif';
+                this.style.height='636px'"/> -->
+                <h1> Magical Kingdom <h1>
+ 
+</html>
