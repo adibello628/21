@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- gamer.html Alyssa DiBello, Jaclyn Navarro, Courtney Shultz-->
-<!-- This is our web page that we designed to play a game -->
+<!-- This is our web page that we desgined to play a game -->
 <!-- We hope you Enjoy our game!                    -->
 <!-- =================================================== -->
 
@@ -20,5 +20,12 @@
                 onmouseout="this.src='italiano.gif';
                 this.style.height='636px'"/> -->
                 <h1> Magical Kingdom <h1>
+                
+                <form name=myform>
+<input type=button value="Enter Your Name" 
+onClick="
+  s=prompt('Enter your name','Name');
+  alert('Hello '+s+'!')">
+</form>
  
 </html>
