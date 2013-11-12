@@ -21,6 +21,8 @@
                 this.style.height='636px'"/> -->
                 <h1> Magical Kingdom <h1>
 
+<img src="http://www.clipart-box.com/zoom/knight-boy120523.jpg" height=200 width=200>
+
 <form name=myform>
 <input type=button value="Enter Your Name" 
 onClick="
