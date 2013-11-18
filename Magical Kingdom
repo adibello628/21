@@ -29,5 +29,23 @@ onClick="
   alert('Hello '+s+'! '+ 'Ready to Play the Game' + '?')">
 </form>
 
+<img src="knight.jpg" height=200 width=200> 
+<input type="button" value="Boy" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'You picked the Knight! ';">
+
+<img src="littleprincess.jpg" height=200 width=200>
+
+<input type="button" value="Girl" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'You picked the Princess! ';">
+ 
+ 
+
+                        
+
+  <hr>
+  <div id="outputDiv"></div>
+
 
 </html>
