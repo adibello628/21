@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- gamer.html Alyssa DiBello, Jaclyn Navarro, Courtney Shultz-->
+<!-- MagicalKingdom.html Alyssa DiBello, Jaclyn Navarro, Courtney Shultz-->
 <!-- This is our web page that we desgined to play a game -->
 <!-- We hope you Enjoy our game!                    -->
 <!-- =================================================== -->
@@ -21,7 +21,6 @@
                 this.style.height='636px'"/> -->
                 <h1> Magical Kingdom <h1>
 
-<img src="http://www.clipart-box.com/zoom/knight-boy120523.jpg" height=200 width=200>
 
 <form name=myform>
 <input type=button value="Enter Your Name" 
