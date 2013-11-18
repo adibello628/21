@@ -41,7 +41,8 @@ onClick="
                        document.getElementById('outputDiv').innerHTML + 'You picked the Princess! ';">
  
  
-
+<input type="button" value="Clear the Translation" 
+             onclick="document.getElementById('outputDiv').innerHTML = '';">  
                         
 
   <hr>
