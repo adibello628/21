@@ -49,7 +49,15 @@ onClick="
   <div id="outputDiv"></div>
 
 
- <img src="playbutton.png" alt="image"
+<input type="button" value="Play!"
+onclick="document.getElementById('hidden').style.display = 'inline';">
+
+ <img src="maze.gif" alt="image" id="hidden" style="display:none;"
                 onclick="this.src='maze.gif'">
-                
+
+
+
+
+
+
 </html>
