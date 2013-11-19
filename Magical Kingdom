@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!-- MagicalKingdom.html Alyssa DiBello, Jaclyn Navarro, Courtney Shultz-->
 <!-- This is our web page that we desgined to play a game -->
@@ -8,7 +9,7 @@
  <head>
    <title> Magical Kingdom </title>
    <!-- script type="text/javascript" 
-   			src= "average.js"></script> -->
+                           src= "average.js"></script> -->
  </head>
 
  <body>
@@ -29,18 +30,16 @@ onClick="
   alert('Hello '+s+'! '+ 'Ready to Play the Game' + '?')">
 </form>
 
-Pick Your Player!
-
 <img src="knight.jpg" height=200 width=200> 
 <input type="button" value="Boy" 
             onclick="document.getElementById('outputDiv').innerHTML= 
-                       document.getElementById('outputDiv').innerHTML + 'You picked the Knight! ';">
+                       document.getElementById('outputDiv').innerHTML + 'You picked the Knight! Now Click the play button.';">
 
 <img src="littleprincess.jpg" height=200 width=200>
 
 <input type="button" value="Girl" 
             onclick="document.getElementById('outputDiv').innerHTML= 
-                       document.getElementById('outputDiv').innerHTML + 'You picked the Princess! ';">
+                       document.getElementById('outputDiv').innerHTML + 'You picked the Princess! Now Click the play button. ';">
  
  
 <input type="button" value="Clear" 
@@ -51,4 +50,5 @@ Pick Your Player!
   <div id="outputDiv"></div>
 
 
-</html>
+ <img src="playbutton.png" alt="image"
+                onclick="this.src='maze.gif'">
