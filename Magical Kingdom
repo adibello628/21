@@ -12,7 +12,7 @@
  </head>
 
  <body>
- <body style="background-color:red;color:white">
+ <body style="background-color:hotpink;color:white">
   <div style="text-align:center">
            <!-- <img src="italiano.gif" alt="image"
                 onmouseover="this.src='italia.gif';
