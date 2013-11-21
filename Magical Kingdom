@@ -9,10 +9,31 @@
    <title> Magical Kingdom </title>
    <!-- script type="text/javascript" 
                            src= "average.js"></script> -->
+    <script type="text/javascript">
+
+    function nextPage(curr) {
+      var next, currPage, nextPage;
+
+      next = curr + 1;
+      currPage = document.getElementById('page' + curr);
+      nextPage = document.getElementById('page' + next);
+      
+      currPage.style.display = 'none';
+      nextPage.style.display = 'block';
+    }
+
+    function start() {
+      document.getElementById('page0').style.display = 'block';
+    }
+
+  </script>                  
+                           
  </head>
 
  <body>
+ <body onload="start();">
  <body style="background-color:hotpink;color:white">
+ 
   <div style="text-align:center">
            <!-- <img src="italiano.gif" alt="image"
                 onmouseover="this.src='italia.gif';
@@ -43,80 +64,81 @@ onClick="
  
 <input type="button" value="Clear" 
              onclick="document.getElementById('outputDiv').innerHTML = '';">  
-                        
 
+  <div id="page0">
+    <button onclick="nextPage(0);">Click Play to begin</button>
+  </div>
+  
   <hr>
   <div id="outputDiv"></div>
 
 
-<input type="button" value="Play!"
+<!--<input type="button" value="Play!"
 onclick="document.getElementById('hidden').style.display = 'inline';">
 
  <img src="maze.gif" alt="image" id="hidden" style="display:none;"
-                onclick="this.src='maze.gif'">
-
-
-
+                onclick="this.src='maze.gif'"> -->
 <body>
- <div style="text-align:center">
-<img src= "beautyshop.jpg" height=500 width=600 >
+
+ <body onload="start();">
+
+  <h1>Magical Kingdom</h1>
+
+  <div id="page0">
+    <button onclick="nextPage(0);">Click Play to begin</button>
+  </div>
+
+  <div id="page1">
+    <h2>Beauty Shop</h2>
+    <p>Where is the Card?</p>
+    <img src= "beautyshop.jpg" height=500 width=600 >
 <br></br>
-Where is the card?
 <input type="button" value="Behind the mirror" >
 <input type="button" value="In the closet" >
 
- <div style="text-align:center">
-<img src= "bedroom.jpg" height=500 width=600 > 
+    <button onclick="nextPage(1);">Next</button>
+  </div>
+
+  <div id="page2">
+    <h2>Bedroom</h2>
+    <p>Where is the Card?</p>
+    <img src= "bedroom.jpg" height=500 width=600 > 
 <br></br>
-Where is the card?
 <input type="button" value="Under the bed" >
 <input type="button" value="In the draw" >
+    
+    <button onclick="nextPage(2);">Next</button>
+  </div>
 
- <div style="text-align:center">
-<img src= "kitchen.jpg" height=500 width=600>
+  <div id="page3">
+    <h2>Kitchen</h2>
+    <p>Where is the Card?</p>
+    <img src= "kitchen.jpg" height=500 width=600>
 <br></br>
-Where is the card?
 <input type="button" value="In the oven" >
 <input type="button" value="In a cabinet" >
+    
+    <button onclick="nextPage(3);">Next</button>
+  </div>
 
- <div style="text-align:center">
-<img src= "livingroom.jpg" height=500 width=600>
+  <div id="page4">
+    <h2>Living Room</h2>
+    <p>Where is the Card?</p>
+    <img src= "livingroom.jpg" height=500 width=600>
 <br></br>
-Where is the card?
 <input type="button" value="In the curtain" >
-<input type="button" value="Under the couch" 
-onclick="findcard(this.value);"/>
+<input type="button" value="Under the couch" >
+    <button onclick="nextPage(4);">Next</button>
+  </div>
 
- <div style="text-align:center">
-<img src= "sewroom.jpg" height=500 width=600>
+<div id="page5">
+    <h2>Sewing Room</h2>
+    <p>Where is the Card?</p>
+    <img src= "sewroom.jpg" height=500 width=600>
 <br></br>
-Where is the card?
 <input type="button" value="Under the chair" >
 <input type="button" value="In the basket" >
-
-
-<script type="text/javascript'>
-
-Function findcard(card){
-
-if (card=== "Behind the mirror")
-  {
-  alert("You have found a card!");
-  }
-else
-  {
-  alert("I am sorry the card is not there");
-  }
-
-}
-
-</script>
-
-
-
+  </div>
 </body>
-
-
-
 
 </html>
