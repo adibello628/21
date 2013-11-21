@@ -57,6 +57,65 @@ onclick="document.getElementById('hidden').style.display = 'inline';">
 
 
 
+<body>
+ <div style="text-align:center">
+<img src= "beautyshop.jpg" height=500 width=600 >
+<br></br>
+Where is the card?
+<input type="button" value="Behind the mirror" >
+<input type="button" value="In the closet" >
+
+ <div style="text-align:center">
+<img src= "bedroom.jpg" height=500 width=600 > 
+<br></br>
+Where is the card?
+<input type="button" value="Under the bed" >
+<input type="button" value="In the draw" >
+
+ <div style="text-align:center">
+<img src= "kitchen.jpg" height=500 width=600>
+<br></br>
+Where is the card?
+<input type="button" value="In the oven" >
+<input type="button" value="In a cabinet" >
+
+ <div style="text-align:center">
+<img src= "livingroom.jpg" height=500 width=600>
+<br></br>
+Where is the card?
+<input type="button" value="In the curtain" >
+<input type="button" value="Under the couch" 
+onclick="findcard(this.value);"/>
+
+ <div style="text-align:center">
+<img src= "sewroom.jpg" height=500 width=600>
+<br></br>
+Where is the card?
+<input type="button" value="Under the chair" >
+<input type="button" value="In the basket" >
+
+
+<script type="text/javascript'>
+
+Function findcard(card){
+
+if (card=== "Behind the mirror")
+  {
+  alert("You have found a card!");
+  }
+else
+  {
+  alert("I am sorry the card is not there");
+  }
+
+}
+
+
+
+
+
+</body>
+
 
 
 
