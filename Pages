@@ -1,11 +1,3 @@
-1. Click the play button to begin the game.
-2. Enter your name.
-3. Once you have entered your name, choose your character.
-The point of this game is to go through Miney's house and find all the playing cards she has lost.
-You must click the next button to enter each room. At the end it will show a total of how many cards 
-you have recieved.To win the game, you must find three cards to continue on to the next level. 
-
-
 <!doctype html>
 <html>
 <head>
@@ -42,26 +34,38 @@ you have recieved.To win the game, you must find three cards to continue on to t
 
   <h1>Magical Kingdom</h1>
   
- <!-- <form name=myform>
-<input type=button value="Enter Your Name" 
-onClick="
-  s=prompt('Enter your name','Name');
-  alert('Hello '+s+'! '+ 'Ready to Play the Game' + '?')">
-</form> -->
-
   <div id="page0">
-    <button onclick="nextPage(0);">Click Play to begin</button>
+    <button onclick="nextPage(0);">Click Instructions to begin</button>
+     </div>
+   <div id="page1">
+   <h2>Instructions</h2>
+    <ol> 
+   		<li> Click the play button to begin the game.</li> 
+   		<li> Enter your name.</li> 
+   		<li> Once you have entered your name, choose your character.</li>
+   		
+<li>The point of this game is to go through Miney's house and find all the playing cards she has lost.
+You must click the next button to enter each room. At the end it will show a total of how many cards 
+you have recieved.To win the game, you must find three cards to continue on to the next level. </li></ol>
+  <br></br>
+    <button onclick="nextPage(1);">Play</button>
   </div>
   
-  <div id="page1">
-    <h2>Enter your name and Pick a Player</h2>
+  <div id="page2">
+    <h3>Enter your name </h3>
       <form name=myform>
-<input type=button value="Enter Your Name" 
-onClick="
-  s=prompt('Enter your name','Name');
-  alert('Hello '+s+'! '+ 'Ready to Play the Game' + '?')">
+Enter Your Name: <input type="text" id="name" size=10 value="">
+<input type="button" value="play!"
+onClick="s=document.getElementById('name').value;
+    alert('Hello '+s+'! '+ 'Ready to Play the Game' + '?' +'Click the next button.')">
 </form>
-         <img src="knight.jpg" height=200 width=200> 
+     <br></br>
+    <button onclick="nextPage(2);">Next</button>
+  </div>
+  
+    <div id="page3">
+    <h3>Pick a Player</h3>
+             <img src="knight.jpg" height=200 width=200> 
          <input type="button" value="Boy" 
             onClick="alert('Yay, '+s+'! '+'You picked the Knight! Now Click the Next Button. ')">
          
@@ -69,54 +73,54 @@ onClick="
     <input type="button" value="Girl" 
             onClick="alert('Yay, '+s+'! '+'You picked the Princess! Now Click the Next Button. ')">
 <br></br>
-    <button onclick="nextPage(1);">Next</button>
+    <button onclick="nextPage(3);">Next</button>
   </div>
 
-  <div id="page2">
-    <h2>Beauty Shop</h2>
+  <div id="page4">
+    <h4>Beauty Shop</h4>
     <p>Where is the Card?</p>
     <img src= "beautyshop.jpg" height=500 width=600 >
 <br></br>
 <input type="button" value="Behind the mirror" >
 <input type="button" value="In the closet" >
 
-    <button onclick="nextPage(2);">Next</button>
+    <button onclick="nextPage(4);">Next</button>
   </div>
 
-  <div id="page3">
-    <h2>Bedroom</h2>
+  <div id="page5">
+    <h5>Bedroom</h5>
     <p>Where is the Card?</p>
     <img src= "bedroom.jpg" height=500 width=600 > 
 <br></br>
 <input type="button" value="Under the bed" >
 <input type="button" value="In the draw" >
     
-    <button onclick="nextPage(3);">Next</button>
+    <button onclick="nextPage(5);">Next</button>
   </div>
 
-  <div id="page4">
-    <h2>Kitchen</h2>
+  <div id="page6">
+    <h6>Kitchen</h6>
     <p>Where is the Card?</p>
     <img src= "kitchen.jpg" height=500 width=600>
 <br></br>
 <input type="button" value="In the oven" >
 <input type="button" value="In a cabinet" >
     
-    <button onclick="nextPage(4);">Next</button>
+    <button onclick="nextPage(6);">Next</button>
   </div>
 
-  <div id="page5">
-    <h2>Living Room</h2>
+  <div id="page7">
+    <h5>Living Room</h5>
     <p>Where is the Card?</p>
     <img src= "livingroom.jpg" height=500 width=600>
 <br></br>
 <input type="button" value="In the curtain" >
 <input type="button" value="Under the couch" >
-    <button onclick="nextPage(5);">Next</button>
+    <button onclick="nextPage(7);">Next</button>
   </div>
 
-<div id="page6">
-    <h2>Sewing Room</h2>
+<div id="page8">
+    <h6>Sewing Room</h6>
     <p>Where is the Card?</p>
     <img src= "sewroom.jpg" height=500 width=600>
 <br></br>
