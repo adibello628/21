@@ -1,3 +1,11 @@
+1. Click the play button to begin the game.
+2. Enter your name.
+3. Once you have entered your name, choose your character.
+The point of this game is to go through Miney's house and find all the playing cards she has lost.
+You must click the next button to enter each room. At the end it will show a total of how many cards 
+you have recieved.To win the game, you must find three cards to continue on to the next level. 
+
+
 <!doctype html>
 <html>
 <head>
