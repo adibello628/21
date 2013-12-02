@@ -34,26 +34,32 @@
 
   <h1>Magical Kingdom</h1>
   
-  <form name=myform>
+ <!-- <form name=myform>
 <input type=button value="Enter Your Name" 
 onClick="
   s=prompt('Enter your name','Name');
   alert('Hello '+s+'! '+ 'Ready to Play the Game' + '?')">
-</form>
+</form> -->
 
   <div id="page0">
     <button onclick="nextPage(0);">Click Play to begin</button>
   </div>
   
   <div id="page1">
-    <h2>Pick a Player</h2>
+    <h2>Enter your name and Pick a Player</h2>
+      <form name=myform>
+<input type=button value="Enter Your Name" 
+onClick="
+  s=prompt('Enter your name','Name');
+  alert('Hello '+s+'! '+ 'Ready to Play the Game' + '?')">
+</form>
          <img src="knight.jpg" height=200 width=200> 
          <input type="button" value="Boy" 
-            onClick="alert('Yay, '+s+'! '+'You picked the Knight! Now Click the Next Button ')">
+            onClick="alert('Yay, '+s+'! '+'You picked the Knight! Now Click the Next Button. ')">
          
     <img src="littleprincess.jpg" height=200 width=200>
     <input type="button" value="Girl" 
-            onClick="alert('Yay, '+s+'! '+'You picked the Princess! Now Click the Next Button ')">
+            onClick="alert('Yay, '+s+'! '+'You picked the Princess! Now Click the Next Button. ')">
 <br></br>
     <button onclick="nextPage(1);">Next</button>
   </div>
