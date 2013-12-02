@@ -52,6 +52,8 @@ onClick="
             onClick="alert('Yay, '+s+'! '+'You picked the Knight! Now Click the Next Button ')">
          
     <img src="littleprincess.jpg" height=200 width=200>
+    <input type="button" value="Girl" 
+            onClick="alert('Yay, '+s+'! '+'You picked the Princess! Now Click the Next Button ')">
 <br></br>
     <button onclick="nextPage(1);">Next</button>
   </div>
