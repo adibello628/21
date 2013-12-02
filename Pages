@@ -49,9 +49,7 @@ onClick="
     <h2>Pick a Player</h2>
          <img src="knight.jpg" height=200 width=200> 
          <input type="button" value="Boy" 
-            onclick="document.getElementById('outputDiv').innerHTML= 
-                       document.getElementById('outputDiv').innerHTML + 'You picked the Knight! Now Click the play button.';">
-                         <div id="outputDiv"></div>
+            onClick="alert('Yay, '+s+'! '+'You picked the Knight! Now Click the Next Button ')">
          
     <img src="littleprincess.jpg" height=200 width=200>
 <br></br>
@@ -111,4 +109,3 @@ onClick="
   </div> 
 </body>
 </html>
-
