@@ -1,0 +1,198 @@
+<!doctype html>
+<!-- MagicalKingdom.html Alyssa DiBello, Jaclyn Navarro, Courtney Shultz-->
+<!-- This is our web page that we desgined to play a game -->
+<!-- We hope you Enjoy our game!                    -->
+<!-- =================================================== -->
+
+<html>
+<head>
+  <title>Magical Kingdom</title>
+
+  <style type="text/css">
+    body { text-align: center; }
+    body ol{text-align: left;}
+    div { display: none; }
+  </style>
+  
+  <body style="background-color:hotpink;color:white">
+
+  <script type="text/javascript">
+
+    function nextPage(curr) {
+      var next, currPage, nextPage;
+
+      next = curr + 1;
+      currPage = document.getElementById('page' + curr);
+      nextPage = document.getElementById('page' + next);
+      
+      currPage.style.display = 'none';
+      nextPage.style.display = 'block';
+    }
+
+    function start() {
+      document.getElementById('page0').style.display = 'block';
+    }
+    var player={
+    name:"",
+    sex:"",
+    cards:0,
+    }
+    function findcard(flag){
+    if(flag){
+    player.cards++;
+    alert('You found one card, you have '+player.cards+' cards.');
+    }
+    else{
+    alert('You found no cards, you have '+player.cards+' cards.');
+    }
+    }
+    function gameend(){
+    if(player.cards>=3)
+    {
+    alert("You won the game!, Congratulations!"); nextPage(11);
+    }
+    else{
+    alert("You lose, YOU GET NOTHING"); nextPage(11); nextPage(12);
+    }
+    }
+  </script>
+
+</head>
+<body onload="start();">
+
+  <h1>Magical Kingdom</h1>
+  
+  <div id="page0">
+    <button onclick="nextPage(0);">Click to begin</button>
+     </div>
+     <div id="page1">
+   <h2>Once upon a time...</h2>
+   Mickey and Minnie were living happily in their home.
+   <br>
+    <img src="minnieshouse.jpg" height=500 width=700> 
+   
+  <br></br>
+    <button onclick="nextPage(1);">Continue</button>
+  </div>
+  
+    <div id="page2">
+   <h2> But one day...</h2>
+  The mean Black Pete, Mickey's arch enemy came and stole Minnie from there home.
+   <br>
+   <img src="blackpete.jpg" height=400 width=700> 
+  
+  <br></br>
+    <button onclick="nextPage(2);">Continue</button>
+  </div>
+    <div id="page3">
+   <h2>Mickey needs our help!</h2>
+   Mickey is so sad with out Minnie and needs our help. We must 
+   find all the cards in there house to give to black pete to win Minnie back!
+     <br>
+   <img src="mickeysad.jpg" height=400 width=400> 
+   
+  <br></br>
+    <button onclick="nextPage(3);">Continue</button>
+  </div>
+  
+     
+   <div id="page4">
+   <h2>Instructions</h2>
+    <ol> 
+   		<li> Click the play button to begin the game.</li> 
+   		<li> Enter your name.</li> 
+   		<li> Once you have entered your name, choose your character.</li>
+   		
+<li>The point of this game is to go through Miney and Mickey's house and find all the hidden cards. We need to find the hidden cards
+in order to get Minnie back from the evil Black Pete. At the end it will show a total of how many cards 
+you have recieved.To win the game, you must find three cards. </li></ol>
+  <br></br>
+    <button onclick="nextPage(4);">Play</button>
+  </div>
+  
+  <div id="page5">
+    <h3>Enter your name </h3>
+      <form name=myform>
+Enter Your Name: <input type="text" id="name" size=10 value="">
+</form>
+     <br></br>
+    <button onclick="player.name=document.getElementById('name').value; nextPage(5);">Next</button>
+  </div>
+  
+    <div id="page6">
+    <h3>Pick a Player</h3>
+             <img src="knight.jpg" height=200 width=200> 
+         <input type="button" value="Boy" 
+            onClick="player.sex='boy'; alert('Yay, '+player.name+'! '+'You picked the Knight! Now Click the Next Button. ')">
+         
+    <img src="littleprincess.jpg" height=200 width=200>
+    <input type="button" value="Girl" 
+            onClick="player.sex='boy'; alert('Yay, '+player.name+'! '+'You picked the Princess! Now Click the Next Button. ')">
+<br></br>
+    <button onclick="nextPage(6);">Next</button>
+  </div>
+
+  <div id="page7">
+    <h2>Beauty Shop</h2>
+    <p>Where is the Card?</p>
+    <img src= "beautyshop.jpg" height=500 width=600 >
+<br></br>
+<input type="button" value="Behind the mirror" onclick="findcard(false);nextPage(7);">
+<input type="button" value="In the closet" onclick="findcard(true); nextPage(7);">
+  </div>
+
+  <div id="page8">
+    <h2>Bedroom</h2>
+    <p>Where is the Card?</p>
+    <img src= "bedroom.jpg" height=500 width=600 > 
+<br></br>
+<input type="button" value="Under the bed" onclick="findcard(true); nextPage(8);">
+<input type="button" value="In the draw" onclick="findcard(false); nextPage(8);">
+
+  </div>
+
+  <div id="page9">
+    <h2>Kitchen</h2>
+    <p>Where is the Card?</p>
+    <img src= "kitchen.jpg" height=500 width=600>
+<br></br>
+<input type="button" value="In the oven" onclick="findcard(true); nextPage(9);">
+<input type="button" value="In a cabinet" onclick="findcard(false); nextPage(9);">
+  </div>
+
+  <div id="page10">
+    <h2>Living Room</h2>
+    <p>Where is the Card?</p>
+    <img src= "livingroom.jpg" height=500 width=600>
+<br></br>
+<input type="button" value="In the curtain" onclick="findcard(false); nextPage(10);">
+<input type="button" value="Under the couch" onclick="findcard(true); nextPage(10);">
+    
+  </div>
+
+<div id="page11">
+    <h2>Sewing Room</h2>
+    <p>Where is the Card?</p>
+    <img src= "sewroom.jpg" height=500 width=600>
+<br></br>
+<input type="button" value="Under the chair" onclick="findcard(true); gameend();">
+<input type="button" value="In the basket" onclick="findcard(false); gameend();">
+  </div> 
+  <div id="page12">
+   <h2>Winning Room!</h2>
+   CONGRATS THEIR BACK TOGETHER!
+   <br>
+  <img src="mickeyloveminni.jpg" height=400 width=700> 
+   
+  </div>
+  <div id="page13">
+   <h2>Loser Room</h2>
+   You let Mickey Down... How could you let Black Pete Keep her forever!!
+   <br>
+   <img src="MickeySadLose.jpg" height=400 width=400> 
+   <br>
+  <!-- <input type="button" value="Start Over" onclick="nextPage(13); start();"> -->
+  </div>
+  
+</body>
+</html>
